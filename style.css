@@ -23,6 +23,7 @@ p {
     margin: 0 0 10px;
 }
 
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 /* Container
 ===================*/
@@ -38,7 +39,6 @@ p {
 
 .header {
     width: 100%;
-    height: auto;
     background-color: #333;
 
 
@@ -172,43 +172,6 @@ p {
     background-color: #006cff;
 }
 
-
-
-/* Features
-===================*/
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 95px 0;
-}
-
-.features__item {
-    width: 33.33333%;
-    padding: 0 40px;
-    margin: 25px 0;
-
-    text-align: center;
-}
-
-.features__icon {
-    margin-bottom: 25px;
-}
-
-.features__title {
-    margin-bottom: 20px;
-
-    font-size: 14px;
-    color: #2d3033;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.features__text {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #6c7279;
-}
-
 /*Section*/
 .section {
     padding-top: 60px;
@@ -239,15 +202,29 @@ p {
 
     background-color: #1d7dff;
 }
+/*courses*/
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px
+
+}
+.courses__item{
+    width: 33.33333%;
+    position: relative;
+    overflow: hidden;  
+}
+.courses__bag{
+    background-color: #d2d2d2;
+    border-radius: 6px;
+    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
 
 /*gallery*/
 .gallery {
     display: flex;
     flex-wrap: wrap;
-}
-
-.gallery__photo {
-
+    padding-bottom: 50px;
 }
 
 .gallery__item{
@@ -281,6 +258,8 @@ p {
 }
 
 .works__photo {
+    min-width: 100%;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -330,6 +309,43 @@ p {
     color: #fff;
 }
 
+
+/* Footer
+===================*/
+
+.footer {
+    background-color: #555;
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0;
+}
+
+.footer__block {
+    width: 50%;
+    padding: 0 15px;
+
+    text-align: center;
+}
+
+.footer__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .5);
+}
+
 /* Copyright
 ===================*/
 
@@ -349,3 +365,93 @@ p {
 .copyright__text span {
     color: #fff;
 }
+
+/* Media
+===================*/
+
+@media (max-width: 1300px) {
+    /* Works */
+    .works__item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* Nav */
+    .nav {
+        display: none;
+    }
+
+    /* Intro */
+    .intro__title {
+        font-size: 40px;
+    }
+
+    /* Features */
+    .gallery__item {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    /* Intro */
+    .intro {
+        height: auto;
+        padding-top: 130px;
+        padding-bottom: 30px;
+    }
+
+    .intro__title {
+        font-size: 30px;
+    }
+
+    .intro__subtitle {
+        margin-bottom: 30px;
+
+        font-size: 16px;
+    }
+}
+@media (max-width: 1100px){
+
+    /* Courses */
+    .courses{
+        margin: 0 auto;
+    }
+    .courses__item {
+        width: 50%;
+        padding: 0 30px;
+    }
+
+    /* Works */
+    .works__item {
+        width: 100%;
+        height: 300px;
+    }
+
+}
+.social{
+    margin-left: 128px;
+
+}
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: rgba(255, 255, 255, .5);
+    border: 1px solid #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #333;
+    
+}
+.youtube a:hover {background: #333; color: #fff;}
+.instagram a:hover {background: #333; color: #fff;}
+.facebook a:hover {background: #333; color: #fff;}
+.vk a:hover {background: #333; color: #fff;}
+.telegram a:hover {background: #333; color: #fff;}
