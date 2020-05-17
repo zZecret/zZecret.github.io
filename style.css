@@ -169,7 +169,7 @@ p {
 }
 
 .btn--blue:hover {
-    background-color: #006cff;
+    background-color: #0051c0;
 }
 
 /*Section*/
@@ -219,6 +219,15 @@ p {
     border-radius: 6px;
     box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
 }
+.courses__subtitle{
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.1;
+    color: #333;
+    
+    padding: 10px 0;
+}
 
 /*gallery*/
 .gallery {
@@ -232,6 +241,7 @@ p {
     position: relative;
     overflow: hidden;
     margin-top: 10px;
+
 
 }
 
@@ -374,6 +384,7 @@ p {
     .works__item {
         width: 50%;
     }
+
 }
 
 @media (max-width: 991px) {
@@ -382,7 +393,10 @@ p {
         font-size: 40px;
     }
 
-    /* Features */
+    /* gallery */
+    .gallery{
+        padding: 0 80px;
+    }
     .gallery__item {
         width: 50%;
     }
@@ -419,10 +433,8 @@ p {
         padding: 0 30px;
     }
 
-    /* Works */
-    .works__item {
-        width: 100%;
-        height: 300px;
+    .header__logo{
+        width: 50%;
     }
 
 }
